@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- stylesheet below can overwrite stylesheet linked above
+         we link the bootstrap css library above our own stylesheet 
+    because we might want to overwrite bootstrap css library values sometimes in our stylesheet -->
+    
+    <style type="text/css">
+        .fa_custom {
+        color: 
+        #ffffff;
+        }
+    </style>
+
+    <title>Todos</title>
+</head>
+<body>
+    
+    <!-- <i class="fa fa-trash-o"></i> -->
+
+
+    <div class="container">
+   <!-- bootstrap container  keeps text centralized -->
+
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Todo List</h1>
+            <form  class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder=" search todos">
+            </form>
+        </header>
+
+
+
+
+
+        <!-- todos  is a custom class -->
+        <ul class="list-group todos mx-auto text-light">
+           
+           
+           
+            <li class="fa_custom list-group-item d-flex justify-content-between align-items-center">
+                <span>play mariokart</span>
+                <i class="fa fa-trash-o fa_custom delete"></i>
+           
+            </li>
+
+
+            <li class="fa_custom list-group-item d-flex justify-content-between align-items-center">
+                <span>defeat ganon in zelda</span>
+                <i class="fa fa-trash-o fa_custom delete"></i>
+           
+            </li>
+
+
+            <li class="fa_custom list-group-item d-flex justify-content-between align-items-center">
+                <span>make a veggie pie</span>
+                <i class="fa fa-trash-o fa_custom delete"></i>
+           
+            </li>
+
+
+
+
+
+        </ul>
+
+
+
+
+        <!-- add is custom -->
+        <form  class="add text-center my-4">
+            <label  class="text-light">Add a new todo...</label>
+            <input type="text" class="form-control m-auto"  name="add"/>
+            <!-- <input type="text" class="form-control m-auto" name="sub"/> -->
+        </form>
+        <!--  remember we don't have to have a submit button here
+        another method is to use enter key for submit in form -->
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

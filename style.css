@@ -1,0 +1,32 @@
+body{
+    background:#352f5b;
+}
+
+
+.container{
+    max-width: 400px;
+}
+
+/* when it out of focus  and also when it is focused.. clicked */
+
+input[type=text],
+input[type=text]:focus{
+    color: #fff;
+    border: none;
+    background: rgba(0,0,0,0.4);
+    max-width: 400px;
+}
+
+.todos li{
+    background:#423a6f;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+
+.filtered_out{
+    display:none !important ;
+    /* overwrite anyother class assigned */
+}
